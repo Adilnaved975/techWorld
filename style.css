@@ -1,0 +1,144 @@
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+   .left{
+    display: flex;
+    gap: 15px;
+   }
+   nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 97px;
+   }
+   ul{
+    display: flex;
+    gap:30px;
+   }
+ul li{
+    list-style: none;
+}
+.title{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+.title .heading{
+    font-size: 26px;
+    font-weight: 900;
+}
+.title .span{
+        position: relative;
+    left: 63px;
+    top: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #584d4d;
+}
+ul a{
+    text-decoration: none;
+    color:rgb(61, 60, 60)
+}
+.content{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    margin-top: 60px;
+}
+.content .content-1{
+        font-size: 47px;
+        text-align: center;
+}
+#ultra{
+    font-weight: bold;
+}
+.content .content-2{
+    font-size: 21px;
+    /* width: 800px; */
+    margin: auto;
+    text-align: center;
+}
+.content .content-3 button{
+        padding: 17px 57px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #32a5d4;
+    border-radius: 24px;
+    border: none;
+}
+.boxes{
+    width:80vw;
+    margin:20px auto;
+    min-height:800px;
+    /* border:1px solid black; */
+
+}
+.box{
+   background-color: #f8f8f8;
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding:10px;
+    
+}
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:30px;
+}
+.box span:first-child{
+font-size: 26px;
+    font-weight: bold;
+    
+}
+.box button{
+        color: white;
+    padding: 7px 22px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #55b655;
+    border: none;
+    border-radius: 5px;
+}
+.box p{
+    text-align: center;
+    /* margin: 10px; */
+    font-size: 11px;
+    position: relative;
+    bottom: 19px;
+}
+@media screen and (max-width: 955px) {
+    .boxes{
+    grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (max-width:550px) {
+    .boxes{
+        grid-template-columns: 1fr;
+    }
+    ul li{
+    display: none;
+}
+}
+#internet{
+    position: relative;
+    position: relative;
+    left: 28px;
+    bottom: 3px;
+}
+.box>button a{
+    text-decoration: none;
+    color:white;
+}
